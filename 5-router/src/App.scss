@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  padding: 0.625rem;
+}
+
+main {
+  display: flex;
+}
+
+.hero {
+  height: 18.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+  text-align: center;
+  border-bottom: solid 1px #666666;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background: #999999;
+  border-top: solid 1px #666666;
+  padding: 1.5625rem;
+}
+
+.footer--left {
+  align-self: right;
+}

@@ -1,0 +1,23 @@
+.card-form {
+  background: #dddddd;
+  padding: 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.card-form > * {
+  flex: 0 0 100%;
+}
+
+.card-form__item {
+  width: 18.75rem;
+  padding: 3rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  margin: 0.625rem 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #999999;
+}
