@@ -5,13 +5,13 @@ const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
 
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
-  const GENRE_ID = 878;
+  const genreId = 878;
 
   useEffect(() => {
     const fetchAllMoviesWithGenre = async () => {
       try {
         const response = await axios.get(
-          `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=${GENRE_ID}`
+          `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=${genreId}`
         );
         setMovies(response.data.results);
       } catch (error) {
