@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY;
+
 const MovieList = () => {
   const [movies, setMovies] = useState([]);
-  const apiKey = import.meta.env.VITE_TMDB_API_KEY;
-  const genreId = 878;
+  const GENRE_ID = 878;
 
   useEffect(() => {
     const fetchAllMoviesWithGenre = async () => {
       try {
         const response = await axios.get(
-          `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&with_genres=${genreId}`
+          `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_genres=${GENRE_ID}`
         );
         setMovies(response.data.results);
       } catch (error) {

@@ -1,0 +1,27 @@
+.header {
+    background-color: rgb(118, 158, 171);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+
+    &__title {
+        margin: 0;
+        color: white;
+    }
+
+    &__nav-items {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__nav-item {
+        list-style-type: none;
+        
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
+}
